@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/main.css",
+    "main.js": "/main.0e2a374627d3dec898e2.bundle.js",
+    "main.css.map": "/main.css.map",
+    "main.js.map": "/main.0e2a374627d3dec898e2.bundle.js.map",
+    "runtime~main.js": "/runtime~main.0e2a374627d3dec898e2.bundle.js",
+    "runtime~main.js.map": "/runtime~main.0e2a374627d3dec898e2.bundle.js.map",
+    "vendors~main.css": "/vendors~main.css",
+    "vendors~main.js": "/vendors~main.0e2a374627d3dec898e2.bundle.js",
+    "vendors~main.css.map": "/vendors~main.css.map",
+    "vendors~main.js.map": "/vendors~main.0e2a374627d3dec898e2.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.88f2a2cf479a6731133c2a14fdacc524.js": "/precache-manifest.88f2a2cf479a6731133c2a14fdacc524.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/check-bold.6e6d7cd0.svg": "/static/media/check-bold.6e6d7cd0.svg"
+  }
+}
