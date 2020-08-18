@@ -513,7 +513,14 @@ export default Component => {
         if (JSON.stringify(originalOrder) !== JSON.stringify(newOrder)) {
           if (onDraggedColumnChange) onDraggedColumnChange(cols)
         }
+
+        // if a new array of columns, reset the reorder since it's not relevant any more
+        if (this.previousOrigColumns && this.previousOrigColumns !== origColumns) {
+          this.reorder = []
+        }
       }
+
+      this.previousOrigColumns = origColumns
 
       // render
       return (
