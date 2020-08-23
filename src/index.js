@@ -509,11 +509,17 @@ export default Component => {
           return col.accessor
         })
 
+        // if a new array of columns, reset the reorder since it's not relevant any more
+        if (this.previousOrigColumns && this.previousOrigColumns !== origColumns) {
+          this.reorder = []
+        }
         // if order is not equal, then call onDraggedColumnChange prop
-        if (JSON.stringify(originalOrder) !== JSON.stringify(newOrder)) {
+        else if (JSON.stringify(originalOrder) !== JSON.stringify(newOrder)) {
           if (onDraggedColumnChange) onDraggedColumnChange(cols)
         }
       }
+
+      this.previousOrigColumns = origColumns
 
       // render
       return (
