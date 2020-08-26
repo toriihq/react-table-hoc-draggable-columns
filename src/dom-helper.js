@@ -1,4 +1,4 @@
-const stripHtml = element => element.innerHTML.replace(/<[^>]*>?/gm, '')
+const stripHtml = element => (element.innerHTML || '').replace(/<[^>]*>?/gm, '')
 
 const parseStrDimensionToInt = elementSize => parseInt(elementSize, 10)
 
