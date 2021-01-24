@@ -514,7 +514,7 @@ export default Component => {
           this.reorder = []
         }
         // if order is not equal, then call onDraggedColumnChange prop
-        else if (JSON.stringify(originalOrder) !== JSON.stringify(newOrder)) {
+        else if (JSON.stringify(originalOrder) !== JSON.stringify(newOrder) && JSON.stringify(this.reorder) !== '[]') {
           if (onDraggedColumnChange) onDraggedColumnChange(cols)
         }
       }
